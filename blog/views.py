@@ -43,7 +43,8 @@ def post_details(request, slug):
 
         return redirect('blog:post-details', slug=post.slug)
 
-    posts = Post.objects.filter(active=True, featured=True).exclude(title=post.title)[:3]
+    # posts = Post.objects.filter(active=True, featured=True).exclude(title=post.title)[:3]
+    posts = Post.objects.filter(active=True, featured=True)[:3]
 
     context = {'post': post, 'posts': posts}
     return render(request, 'blog/post_details.html', context)
