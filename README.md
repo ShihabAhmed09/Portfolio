@@ -1,6 +1,6 @@
-# Tech-Diary
+# Portfolio
 
-Simple blog using Django Backend with authentication system.
+Portfolio App using Django Backend with authentication system.
 
 ### GETTING STARTED
 
