@@ -42,6 +42,20 @@ http://127.0.0.1:8000/
 python manage.py createsuperuser
 ```
 
+### Changes for Contact Page
+- In settings.py, you have to give your email id and password. I did this using 
+environment variable. If you know how to use environment variable, you can do the 
+same, or you can simply give your account credentials directly in settings.py file.
+```
+EMAIL_HOST_USER = 'youremail@gmail.com'
+EMAIL_HOST_PASSWORD = 'your email password'
+```
+
+- Login to gmail through host email id in your browser and open following link and turn it ON
+```
+https://myaccount.google.com/lesssecureapps
+```
+
 <hr>
 
 ### ScreenShots
