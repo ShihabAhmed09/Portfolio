@@ -21,8 +21,23 @@ http://127.0.0.1:8000/
 python manage.py createsuperuser
 ```
 
+<hr>
 ### ScreenShots
 <hr>
 
 ### Homepage
 ![HomePage](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/HomePage.png?raw=true)
+
+### About
+![AboutPage](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/About.PNG?raw=true)
+![AboutPage](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/About2.PNG?raw=true)
+
+### Contact
+![ContactPage](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Contact.PNG?raw=true)
+
+### Registration
+![Registration](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Registration.PNG?raw=true)
+
+### Login
+![Login](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Login.PNG?raw=true)
+
