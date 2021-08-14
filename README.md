@@ -43,6 +43,7 @@ python manage.py createsuperuser
 ```
 
 <hr>
+
 ### ScreenShots
 <hr>
 
