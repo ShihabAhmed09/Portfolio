@@ -24,17 +24,17 @@ DATABASES = {
 }
 ```
 
-3 - Runserver on port 8000
+3 - Make Migrations 
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+4 - Runserver on port 8000
 ```
 python manage.py runserver
 
 http://127.0.0.1:8000/
-```
-
-4 - Make Migrations 
-```
-python manage.py makemigrations
-python manage.py migrate
 ```
 
 5 - Create superuser 
