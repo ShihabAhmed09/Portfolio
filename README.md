@@ -86,8 +86,17 @@ https://myaccount.google.com/lesssecureapps
 ### Add/Update Project (Same for Blog Post)
 ![AddProject](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/AddProjectPost.PNG?raw=true)
 
-### Project Detail View
+### Projects
+![Projects](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Project.PNG?raw=true)
 
+### Project Detail View
+![ProjectDetail](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/ProjectDetail.PNG?raw=true)
+
+### Blog
+![Blog](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Blog.PNG?raw=true)
+
+### Blog Post
+![BlogPost](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/BlogPost.PNG?raw=true)
 
 ### Messages
 ![Messages](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Inbox.PNG?raw=true)
