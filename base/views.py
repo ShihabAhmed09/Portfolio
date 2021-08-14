@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
+
 from .models import Skill, Contact, Certificate
 from .forms import ContactForm
-from django.contrib import messages
 from .decorators import *
 
 from django.core.mail import EmailMessage

@@ -1,9 +1,10 @@
 from django.shortcuts import redirect, render, get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
+from django.contrib.auth.decorators import login_required
+
 from .models import Project, Tag
 from .forms import ProjectForm
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
-from django.db.models import Q
 from .decorators import *
 
 
