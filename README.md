@@ -67,7 +67,7 @@ python manage.py createsuperuser
 ![Profile](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Profile.PNG?raw=true)
 
 ### Change Password
-![ChangePassword](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/ChangePassowrd.PNG?raw=true)
+![ChangePassword](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/ChangePassword.PNG?raw=true)
 
 ### Add/Update Project (Same for Blog Post)
 ![AddProject](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/AddProjectPost.PNG?raw=true)
@@ -79,7 +79,7 @@ python manage.py createsuperuser
 ![Messages](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Inbox.PNG?raw=true)
 
 ### Message Detail View
-![MessageDetails](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/inboxDetail.PNG?raw=true)
+![MessageDetails](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/InboxDetail.PNG?raw=true)
 
 ### Reply Message
 ![Reply](https://github.com/ShihabAhmed09/Portfolio/blob/main/static/screenshots/Reply.PNG?raw=true)
