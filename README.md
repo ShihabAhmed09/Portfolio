@@ -25,4 +25,5 @@ python manage.py createsuperuser
 <hr>
 
 ### Homepage
+<img src="static/screenshots/HomaPage.png">
 
