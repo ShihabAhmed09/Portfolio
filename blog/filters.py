@@ -5,7 +5,8 @@ from django.db.models import Q
 
 
 class PostFilter(django_filters.FilterSet):
-    q = django_filters.CharFilter(method='my_custom_filter', label='Search for specific post')
+    q = django_filters.CharFilter(method='my_custom_filter', label='Search for specific post',
+                                  widget=forms.TextInput(attrs={'placeholder': u"\U0001F50D"}))
     # title = django_filters.CharFilter(field_name='title', lookup_expr="icontains", label='Title')
     categories = django_filters.ModelMultipleChoiceFilter(queryset=Category.objects.all(),
                                                           widget=forms.CheckboxSelectMultiple)
