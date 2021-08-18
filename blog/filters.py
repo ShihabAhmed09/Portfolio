@@ -17,4 +17,4 @@ class PostFilter(django_filters.FilterSet):
 
     def my_custom_filter(self, queryset, name, value):
         return Post.objects.filter(Q(title__icontains=value) | Q(author__username__icontains=value) |
-                                   Q(categories__name__icontains=value))
+                                   Q(categories__name__icontains=value)).distinct()
