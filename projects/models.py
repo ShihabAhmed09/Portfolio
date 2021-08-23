@@ -22,7 +22,8 @@ class Project(models.Model):
     id = models.UUIDField(primary_key=True, unique=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255)
     content = RichTextUploadingField()
-    thumbnail = models.ImageField(upload_to="projects/thumbnails", default='projects/thumbnails/thumbnail.png')
+    thumbnail = models.ImageField(upload_to="projects/thumbnails", default='projects/thumbnails/thumbnail.png',
+                                  null=True, blank=True)
     created = models.DateTimeField(default=timezone.now)
     active = models.BooleanField(default=False)
     featured = models.BooleanField(default=False)
@@ -34,6 +35,15 @@ class Project(models.Model):
 
     # def get_absolute_url(self):
     #     return reverse('projects:project-details', kwargs={'slug': self.slug})
+
+    # handling empty image field error
+    @property
+    def imageURL(self):
+        try:
+            url = self.thumbnail.url
+        except:
+            url = ''
+        return url
 
     def save(self, *args, **kwargs):
         if self.slug is None:

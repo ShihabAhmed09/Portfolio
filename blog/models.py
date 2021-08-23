@@ -24,7 +24,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     sub_heading = models.CharField(max_length=500, null=True, blank=True)
     content = RichTextUploadingField()
-    thumbnail = models.ImageField(upload_to='blog/thumbnails', default='blog/thumbnails/thumbnail.png')
+    thumbnail = models.ImageField(upload_to='blog/thumbnails', default='blog/thumbnails/thumbnail.png',
+                                  null=True, blank=True)
     active = models.BooleanField(default=False)
     featured = models.BooleanField(default=False)
     created = models.DateTimeField(default=timezone.now)
@@ -33,6 +34,14 @@ class Post(models.Model):
 
     def __str__(self):
         return f'{self.title} by {self.author}'
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.thumbnail.url
+        except:
+            url = ''
+        return url
 
     def save(self, *args, **kwargs):
         if self.slug is None:

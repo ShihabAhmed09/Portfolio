@@ -22,7 +22,7 @@
                         {% endfor %}
                     {% endif %}
 
-                    <img src="{{ post.thumbnail.url }}" class="post-thumbnail">
+                    <img src="{{ post.imageURL }}" class="post-thumbnail">
 
                     <div>
                         {% for category in post.categories.all %}
@@ -94,7 +94,7 @@
                         {% for post in posts %}
                             <div class="sidebar-item">
                                 <a href="{% url 'blog:post-details' post.slug %}">
-                                    <img src="{{ post.thumbnail.url }}">
+                                    <img src="{{ post.imageURL }}">
                                     <div class="sidebar-item-body">
                                         <strong>{{ post.title }}</strong>
                                         <p>{{ post.sub_heading }}</p>
