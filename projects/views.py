@@ -48,7 +48,7 @@ def project_create(request):
 
 @admin_only
 def project_update(request, slug):
-    project = Project.objects.get(slug=slug)
+    project = get_object_or_404(Project, slug=slug)
     form = ProjectForm(instance=project)
 
     if request.method == 'POST':
@@ -64,7 +64,7 @@ def project_update(request, slug):
 
 @admin_only
 def project_delete(request, slug):
-    project = Project.objects.get(slug=slug)
+    project = get_object_or_404(Project, slug=slug)
 
     if request.method == 'POST':
         project.delete()

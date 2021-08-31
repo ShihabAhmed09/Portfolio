@@ -91,7 +91,7 @@ def post_create(request):
 
 @login_required
 def post_update(request, slug):
-    post = Post.objects.get(slug=slug)
+    post = get_object_or_404(Post, slug=slug)
 
     if post.author == request.user:
         form = PostForm(instance=post)
@@ -111,7 +111,7 @@ def post_update(request, slug):
 
 @login_required
 def post_delete(request, slug):
-    post = Post.objects.get(slug=slug)
+    post = get_object_or_404(Post, slug=slug)
 
     if post.author == request.user:
         if request.method == 'POST':

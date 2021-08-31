@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 
 from .models import Skill, Contact, Certificate
@@ -49,7 +49,7 @@ def inbox_page(request):
 
 @admin_only
 def message_page(request, pk):
-    message = Contact.objects.get(id=pk)
+    message = get_object_or_404(Contact, id=pk)
     message.is_read = True
     message.save()
 
@@ -59,7 +59,7 @@ def message_page(request, pk):
 
 @admin_only
 def message_reply(request, pk):
-    message = Contact.objects.get(id=pk)
+    message = get_object_or_404(Contact, id=pk)
 
     if request.method == 'POST':
 
